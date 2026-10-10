@@ -13,11 +13,11 @@
 
 **Rétro-Ingénierie Ghidra des Packers Bat2Exe et Dissection du Code Source d’Obfuscation Batch**
 
-[![Ghidra MCP RE](https://img.shields.io/badge/Ghidra_MCP-PE32_Binary_Disassembly-f43f5e.svg)](../../DEEP_REVERSE_ENGINEERING_AND_SOURCE_ANALYSIS.md)
-[![8 Core Dissections](https://img.shields.io/badge/Source_Teardown-8_Obfuscators_%26_Hookers-f59e0b.svg)](../../BATCH_OBFUSCATION_ARCHITECTURE_AND_CODE_ANALYSIS.md)
-[![Deobfuscator Engine](https://img.shields.io/badge/Engine-Python_Multi--Pass_AST-38bdf8.svg)](../../src/deobfuscator_engine.py)
-[![Sigma & YARA](https://img.shields.io/badge/Detection-Sigma_%26_YARA_Rules-10b981.svg)](../../04_탐지규칙_및_자체엔진/rules)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](../../LICENSE)
+[![Ghidra MCP RE](https://img.shields.io/badge/Ghidra_MCP-PE32_Binary_Disassembly-f43f5e.svg)](../whitepapers/DEEP_REVERSE_ENGINEERING_AND_SOURCE_ANALYSIS.md)
+[![8 Core Dissections](https://img.shields.io/badge/Source_Teardown-8_Obfuscators_%26_Hookers-f59e0b.svg)](../whitepapers/BATCH_OBFUSCATION_ARCHITECTURE_AND_CODE_ANALYSIS.md)
+[![PE Unpacker](https://img.shields.io/badge/Unpacker-Pure--Python_PE32_Engine-38bdf8.svg)](../../src/pe_stub_unpacker.py)
+[![License: MT-SRL](https://img.shields.io/badge/License-MT--SRL-10b981.svg)](../../LICENSE)
+[![Clean Root](https://img.shields.io/badge/Architecture-Clean_Root_7_Items-8b5cf6.svg)](https://github.com/maya-thorne/bat2exe-ghidra-forensics)
 
 <sub>Engineered &amp; Audited by **[Maya Thorne](https://github.com/maya-thorne)** · Binary Forensics &amp; Systems Reverse Engineering</sub>
 
@@ -29,11 +29,11 @@
 
 | # | Document / Artifact | Core Scope & Forensic Coverage | Size |
 | :-: | :--- | :--- | :-: |
-| **1** | 🔬 **[DEEP_REVERSE_ENGINEERING_AND_SOURCE_ANALYSIS.md](../../DEEP_REVERSE_ENGINEERING_AND_SOURCE_ANALYSIS.md)** | **Ghidra MCP PE Binary Disassembly** (`bat2exe_12.exe`, `example.exe`, `BEDeCode.exe`) + **Line-by-Line Source Code Teardown of 8 Core Tools** (`Bat2Exe-dehoisted`, `Batch-Encryption-DeCoder`, `BatCloak`, `Invoke-DOSfuscation`, `SomalifuscatorV2`, `0xidiz3r`, `batch_deobfuscator`, `Exorcism`) | **42.8 KB** |
-| **2** | 🏗️ **[BATCH_OBFUSCATION_ARCHITECTURE_AND_CODE_ANALYSIS.md](../../BATCH_OBFUSCATION_ARCHITECTURE_AND_CODE_ANALYSIS.md)** | **Architectural Taxonomy & Parser Mechanics**: `cmd.exe` 5-Phase Expansion Order, Polyglot Header Exploitation, Pushdown Automaton AST Reconstruction, API Hooking (`FindFixAndRun`) | **43.7 KB** |
-| **3** | ⚙️ **[GHIDRA_BINARY_RE_AND_DEOBFUSCATOR_ENGINE_ANALYSIS.md](../../GHIDRA_BINARY_RE_AND_DEOBFUSCATOR_ENGINE_ANALYSIS.md)** | **Static & Dynamic Unpacking Pipeline**: PE Overlay Extraction, CLR `#US` Stream Recovery, Multi-Pass Regex/AST Deobfuscation Engine (`src/deobfuscator_engine.py`) | **44.4 KB** |
-| **4** | 📖 **[BATCH_OBFUSCATION_ENCYCLOPEDIA.md](../../BATCH_OBFUSCATION_ENCYCLOPEDIA.md)** | **48+ Open-Source & Hugging Face Reference Encyclopedia**: Complete classification of obfuscators, compilers, deobfuscators, and ML datasets | **30.3 KB** |
-| **5** | 🛡️ **[BATCH_OBFUSCATION_MASTER_GUIDE.md](../../BATCH_OBFUSCATION_MASTER_GUIDE.md)** | **30-Year Evolution (1990s–2026) & Defense Matrix**: Historical timeline, Mandiant/Unit 42 threat intelligence, production Sigma & YARA rulesets | **33.6 KB** |
+| **1** | 🔬 **[DEEP_REVERSE_ENGINEERING_AND_SOURCE_ANALYSIS.md](../whitepapers/DEEP_REVERSE_ENGINEERING_AND_SOURCE_ANALYSIS.md)** | **Ghidra MCP PE Binary Disassembly** (`bat2exe_12.exe`, `example.exe`, `BEDeCode.exe`) + **Line-by-Line Source Code Teardown of 8 Core Tools** (`Bat2Exe-dehoisted`, `Batch-Encryption-DeCoder`, `BatCloak`, `Invoke-DOSfuscation`, `SomalifuscatorV2`, `0xidiz3r`, `batch_deobfuscator`, `Exorcism`) | **42.8 KB** |
+| **2** | 🏗️ **[BATCH_OBFUSCATION_ARCHITECTURE_AND_CODE_ANALYSIS.md](../whitepapers/BATCH_OBFUSCATION_ARCHITECTURE_AND_CODE_ANALYSIS.md)** | **Architectural Taxonomy & Parser Mechanics**: `cmd.exe` 5-Phase Expansion Order, Polyglot Header Exploitation, Pushdown Automaton AST Reconstruction, API Hooking (`FindFixAndRun`) | **43.7 KB** |
+| **3** | ⚙️ **[GHIDRA_BINARY_RE_AND_DEOBFUSCATOR_ENGINE_ANALYSIS.md](../whitepapers/GHIDRA_BINARY_RE_AND_DEOBFUSCATOR_ENGINE_ANALYSIS.md)** | **Static & Dynamic Unpacking Pipeline**: PE Overlay Extraction, CLR `#US` Stream Recovery, Multi-Pass Regex/AST Deobfuscation Engine (`src/deobfuscator_engine.py`) | **44.4 KB** |
+| **4** | 📖 **[BATCH_OBFUSCATION_ENCYCLOPEDIA.md](../whitepapers/BATCH_OBFUSCATION_ENCYCLOPEDIA.md)** | **48+ Open-Source & Hugging Face Reference Encyclopedia**: Complete classification of obfuscators, compilers, deobfuscators, and ML datasets | **30.3 KB** |
+| **5** | 🛡️ **[BATCH_OBFUSCATION_MASTER_GUIDE.md](../whitepapers/BATCH_OBFUSCATION_MASTER_GUIDE.md)** | **30-Year Evolution (1990s–2026) & Defense Matrix**: Historical timeline, Mandiant/Unit 42 threat intelligence, production Sigma & YARA rulesets | **33.6 KB** |
 
 ---
 
@@ -41,7 +41,7 @@
 
 <p align="center">
   <a href="https://github.com/maya-thorne/bat2exe-ghidra-forensics">
-    <img src="../../docs/assets/diagrams/ghidra_re_terminal_demo.svg" alt="Ghidra RE Live Terminal Demo" width="100%" />
+    <img src="../assets/diagrams/ghidra_re_terminal_demo.svg" alt="Ghidra RE Live Terminal Demo" width="100%" />
   </a>
 </p>
 
@@ -77,7 +77,7 @@ flowchart TD
 
 <p align="center">
   <a href="https://github.com/maya-thorne/bat2exe-ghidra-forensics">
-    <img src="../../docs/assets/diagrams/pe_stub_unpacking_pipeline.svg" alt="PE Stub Unpacking Pipeline" width="100%" />
+    <img src="../assets/diagrams/pe_stub_unpacking_pipeline.svg" alt="PE Stub Unpacking Pipeline" width="100%" />
   </a>
 </p>
 
@@ -87,7 +87,7 @@ flowchart TD
 
 <p align="center">
   <a href="https://github.com/maya-thorne/bat2exe-ghidra-forensics">
-    <img src="../../docs/assets/diagrams/x86_register_schematic.svg" alt="x86 Register Schematic" width="100%" />
+    <img src="../assets/diagrams/x86_register_schematic.svg" alt="x86 Register Schematic" width="100%" />
   </a>
 </p>
 
@@ -107,22 +107,22 @@ All 3 compiled PE32 executables in the archive were dissected using `re_triage_b
 
 ## 🛠️ 8 Core Tools Source Code Dissection Summary
 
-1. **[`Bat2Exe-dehoisted`](../../01_배치난독화_GitHub_28종/Compilations_And_Packers/Bat2Exe-dehoisted)** (`Batch2Exe.MainWindow` & `CMethods.cs`):
+1. **[`Bat2Exe-dehoisted`](../../references/batch_corpus_28/Bat2Exe-dehoisted)** (`Batch2Exe.MainWindow` & `CMethods.cs`):
    - Uses `CSharpCodeProvider.CompileAssemblyFromSource` to dynamically compile an in-memory stub with embedded resource `batch_cmd`.
    - Compares **`Method1` (Disk Drop to `%TEMP%\temp.bat`)** vs **`Method2` (Fileless Pipe Injection via `RedirectStandardInput = true` + `StandardInput.WriteLine`)**.
-2. **[`Batch-Encryption-DeCoder`](../../01_배치난독화_GitHub_28종/Deobfuscators_And_Unpackers/Batch-Encryption-DeCoder)** (`frmMain.frm`):
+2. **[`Batch-Encryption-DeCoder`](../../references/batch_corpus_28/Batch-Encryption-DeCoder)** (`frmMain.frm`):
    - Dissects the VB6 `CHRMAPSET` lookup table, `@echo off & SetLocal EnableDelayedExpansion` header validation, and 2-stage reversal algorithm.
-3. **[`BatCloak`](../../01_배치난독화_GitHub_28종/Obfuscators/BatCloak)**:
+3. **[`BatCloak`](../../references/batch_corpus_28/BatCloak)**:
    - Exploits the **UTF-16LE BOM Polyglot (`0xFF 0xFE 26 63 6C 73 0D 0A` = `??&cls`)**: text editors decode garbage CJK glyphs while `cmd.exe` runs in Single-Byte ANSI mode, fails on `0xFF 0xFE`, executes `&cls`, and evaluates the remainder.
-4. **[`Invoke-DOSfuscation`](../../01_배치난독화_GitHub_28종/Obfuscators/Invoke-DOSfuscation)** (Mandiant / Daniel Bohannon):
+4. **[`Invoke-DOSfuscation`](../../references/batch_corpus_28/Invoke-DOSfuscation)** (Mandiant / Daniel Bohannon):
    - Formalizes `cmd.exe` AST token-layer vs character-layer obfuscation, zero-alphabetic environment slicing (`%COMSPEC:~-1%`), and reversed `FOR /L` execution loops.
-5. **[`SomalifuscatorV2`](../../01_배치난독화_GitHub_28종/Obfuscators/SomalifuscatorV2)**:
+5. **[`SomalifuscatorV2`](../../references/batch_corpus_28/SomalifuscatorV2)**:
    - Combines dynamic Caesar cipher environment tables, UTF-16LE BOM headers, fake `certutil` X.509 certificate padding, and anti-VM/anti-sandbox traps.
-6. **[`0xidiz3r`](../../01_배치난독화_GitHub_28종/Obfuscators/0xidiz3r)** (Rust):
+6. **[`0xidiz3r`](../../references/batch_corpus_28/0xidiz3r)** (Rust):
    - Bootstraps the entire ASCII printable set from only **3 initial seed characters (`@`, `~`, `=`)** using `%=exitcodeAscii%` and `cmd /c exit /b <N>`.
-7. **[`batch_deobfuscator`](../../01_배치난독화_GitHub_28종/Deobfuscators_And_Unpackers/batch_deobfuscator)** (DissectMalware):
+7. **[`batch_deobfuscator`](../../references/batch_corpus_28/batch_deobfuscator)** (DissectMalware):
    - Implements a **Single-Character Pushdown Automaton (PDA)** state machine in `BatchDeobfuscator.read_logical_line()` and full `%var:str1=str2%` / `%var:~start,len%` emulation.
-8. **[`Exorcism`](../../01_배치난독화_GitHub_28종/Runtime_Hook_And_Monitor/Exorcism)**:
+8. **[`Exorcism`](../../references/batch_corpus_28/Exorcism)**:
    - Injects `payload_dll.dll` into `cmd.exe` and hooks the internal command dispatcher **`FindFixAndRun` (RVA `0x116B0`)** via MS Detours to intercept every expanded command node right before execution.
 
 ---
@@ -131,22 +131,31 @@ All 3 compiled PE32 executables in the archive were dissected using `re_triage_b
 
 ```bash
 # 1. Automated PE32 Bat2Exe unpacker and payload extractor
-python src/pe_stub_unpacker.py --input "01_배치난독화_GitHub_28종/Bat2Exe-dehoisted/Example/example.exe" --output "recovered.bat"
+python src/pe_stub_unpacker.py --input "references/batch_corpus_28/Bat2Exe-dehoisted/Example/example.exe" --output "recovered.bat"
 
-# 2. Run the 6-pass static batch deobfuscator & PE overlay analyzer
-python src/deobfuscator_engine.py --input "03_고전_및_실전_연구샘플/samples/05_layered_complex_obf.bat"
+# 2. Run the unit test suite
+python -m unittest tests/test_pe_unpacker.py
 ```
-
 
 ---
 
-## 📂 Repository Directory Structure
+## 📂 Clean Root Repository Architecture (@clean-root)
 
-- 📄 [`DEEP_REVERSE_ENGINEERING_AND_SOURCE_ANALYSIS.md`](../../DEEP_REVERSE_ENGINEERING_AND_SOURCE_ANALYSIS.md) — Complete Ghidra MCP binary disassembly & 8-tool source code teardown.
-- 📄 [`BATCH_OBFUSCATION_ARCHITECTURE_AND_CODE_ANALYSIS.md`](../../BATCH_OBFUSCATION_ARCHITECTURE_AND_CODE_ANALYSIS.md) — `cmd.exe` parser internals & architectural code analysis.
-- 📄 [`GHIDRA_BINARY_RE_AND_DEOBFUSCATOR_ENGINE_ANALYSIS.md`](../../GHIDRA_BINARY_RE_AND_DEOBFUSCATOR_ENGINE_ANALYSIS.md) — PE overlay unpacking & static AST deobfuscator engine design.
-- 📁 [`src/`](../../src) — Executable Python multi-pass deobfuscator engine (`deobfuscator_engine.py`).
-- 📁 [`01_배치난독화_GitHub_28종/`](../../01_배치난독화_GitHub_28종) — Flattened source code trees of 40+ open-source obfuscators, deobfuscators, runtime hookers, and Bat2Exe packers.
-- 📁 [`02_HuggingFace_AI_자원/`](../../02_HuggingFace_AI_자원) — Hugging Face AI deobfuscation metadata, JFrog Token Entropy Dataset (ArXiv:2510.26847), EDR telemetry & SigmaForge rules.
-- 📁 [`03_고전_및_실전_연구샘플/`](../../03_고전_및_실전_연구샘플) — Step-by-step obfuscated/deobfuscated PoC samples & BatCloak 3-stage forensic deep dive.
-- 📁 [`04_탐지규칙_및_자체엔진/`](../../04_탐지규칙_및_자체엔진) — Production Sigma & YARA detection rulesets and PE binary forensic index (`pe_binaries.json`).
+```text
+bat2exe-ghidra-forensics/
+├── docs/                      # 📁 Master whitepapers, 10-language translations & SVG diagrams
+│   ├── whitepapers/           # 5 deep technical reverse engineering whitepapers
+│   ├── locales/               # 10 localized documentation sets (ko.md, zh-CN.md, es.md, etc.)
+│   └── assets/                # Dark terminal vector hero banners and x86 schematics
+├── references/                # 📁 100% English-standardized open-source corpus & datasets
+│   ├── batch_corpus_28/       # 28+ open-source decompilers, compilers, and packers
+│   ├── huggingface_ai/        # LLM4Decompile, SBERT, and JFrog entropy datasets
+│   ├── classic_samples/       # Step-by-step classic & modern forensic batch samples
+│   └── detection_rules/       # Production Sigma & YARA rulesets
+├── src/                       # 📁 Pure-Python PE32 Bat2Exe unpacker & AST parser engine
+├── tests/                     # 📁 Automated regression assertions and unit test suite
+├── memory/                    # 📁 Context memory, task checklists, and feedback audit logs
+├── .gitignore                 # 🔒 Zero-Leak security boundaries
+├── LICENSE                    # 📜 Maya Thorne Systems & Security Research License (MT-SRL)
+└── README.md                  # 🌟 Clean first-viewport showcase and documentation
+```
