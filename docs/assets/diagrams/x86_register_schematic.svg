@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0714"/>
+      <stop offset="50%" stop-color="#120c22"/>
+      <stop offset="100%" stop-color="#080a14"/>
+    </linearGradient>
+    <linearGradient id="neonTitle" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#fb7185"/>
+      <stop offset="50%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1000" height="560" rx="14" fill="url(#bgGrad)"/>
+  <rect x="1" y="1" width="998" height="558" rx="13" fill="none" stroke="#3b1d54" stroke-width="1.5"/>
+
+  <!-- Title Section -->
+  <g transform="translate(40, 40)">
+    <text x="0" y="0" fill="url(#neonTitle)" font-family="Consolas, monospace" font-size="20" font-weight="900" letter-spacing="-0.5">
+      x86 EXECUTION STATE &amp; UPX NRV2B TRANSITION MATRIX
+    </text>
+    <text x="0" y="24" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12">
+      Ghidra MCP Disassembly · Register Preservation (PUSHAD/POPAD) &amp; Original Entry Point (OEP) Jump
+    </text>
+  </g>
+
+  <!-- Left: x86 Register Grid -->
+  <g transform="translate(40, 100)">
+    <rect width="440" height="410" rx="10" fill="#0d091a" stroke="#4c1d95" stroke-width="1.2"/>
+    <text x="20" y="32" fill="#fb7185" font-family="Consolas, monospace" font-size="14" font-weight="700">CPU REGISTERS (PUSHAD FRAME)</text>
+    <line x1="20" y1="44" x2="420" y2="44" stroke="#2e1065" stroke-width="1"/>
+
+    <!-- Registers -->
+    <g transform="translate(20, 60)" font-family="Consolas, monospace" font-size="12">
+      <!-- EAX -->
+      <rect x="0" y="0" width="75" height="28" rx="5" fill="#2a0a18" stroke="#9f1239" stroke-width="1"/>
+      <text x="18" y="18" fill="#fda4af" font-weight="700">EAX</text>
+      <text x="88" y="18" fill="#cbd5e1">0x00000000 · Accumulator / Return Value</text>
+
+      <!-- ECX -->
+      <rect x="0" y="36" width="75" height="28" rx="5" fill="#2a0a18" stroke="#9f1239" stroke-width="1"/>
+      <text x="18" y="54" fill="#fda4af" font-weight="700">ECX</text>
+      <text x="88" y="54" fill="#cbd5e1">0x00417000 · Counter / String Loop Index</text>
+
+      <!-- EDX -->
+      <rect x="0" y="72" width="75" height="28" rx="5" fill="#2a0a18" stroke="#9f1239" stroke-width="1"/>
+      <text x="18" y="90" fill="#fda4af" font-weight="700">EDX</text>
+      <text x="88" y="90" fill="#cbd5e1">0x77341200 · Data Register / I/O Pointer</text>
+
+      <!-- EBX -->
+      <rect x="0" y="108" width="75" height="28" rx="5" fill="#2a0a18" stroke="#9f1239" stroke-width="1"/>
+      <text x="18" y="126" fill="#fda4af" font-weight="700">EBX</text>
+      <text x="88" y="126" fill="#cbd5e1">0x00400000 · Base Register (PE ImageBase)</text>
+
+      <!-- ESP -->
+      <rect x="0" y="144" width="75" height="28" rx="5" fill="#1e1805" stroke="#92400e" stroke-width="1"/>
+      <text x="18" y="162" fill="#fcd34d" font-weight="700">ESP</text>
+      <text x="88" y="162" fill="#cbd5e1">0x0019FF70 · Stack Pointer (Top of Stack)</text>
+
+      <!-- EBP -->
+      <rect x="0" y="180" width="75" height="28" rx="5" fill="#1e1805" stroke="#92400e" stroke-width="1"/>
+      <text x="18" y="198" fill="#fcd34d" font-weight="700">EBP</text>
+      <text x="88" y="198" fill="#cbd5e1">0x0019FF80 · Base Pointer (Stack Frame)</text>
+
+      <!-- ESI -->
+      <rect x="0" y="216" width="75" height="28" rx="5" fill="#081b2e" stroke="#0369a1" stroke-width="1"/>
+      <text x="18" y="234" fill="#7dd3fc" font-weight="700">ESI</text>
+      <text x="88" y="234" fill="#7dd3fc" font-weight="700">0x00417000 · Source (Compressed Stream)</text>
+
+      <!-- EDI -->
+      <rect x="0" y="252" width="75" height="28" rx="5" fill="#081b2e" stroke="#0369a1" stroke-width="1"/>
+      <text x="18" y="270" fill="#7dd3fc" font-weight="700">EDI</text>
+      <text x="88" y="270" fill="#7dd3fc" font-weight="700">0x00401000 · Dest (Unpacked Buffer)</text>
+
+      <!-- EIP -->
+      <rect x="0" y="288" width="75" height="28" rx="5" fill="#142818" stroke="#15803d" stroke-width="1"/>
+      <text x="18" y="306" fill="#86efac" font-weight="700">EIP</text>
+      <text x="88" y="306" fill="#86efac" font-weight="700">0x00420EA0 ➔ OEP 0x00412475</text>
+    </g>
+  </g>
+
+  <!-- Right: Assembly Flow Diagram -->
+  <g transform="translate(510, 100)">
+    <rect width="450" height="410" rx="10" fill="#0d091a" stroke="#4c1d95" stroke-width="1.2"/>
+    <text x="20" y="32" fill="#38bdf8" font-family="Consolas, monospace" font-size="14" font-weight="700">DISASSEMBLY &amp; UNPACKING LOOP (bat2exe_12.exe)</text>
+    <line x1="20" y1="44" x2="430" y2="44" stroke="#2e1065" stroke-width="1"/>
+
+    <!-- Assembly instructions -->
+    <g transform="translate(20, 60)" font-family="Consolas, monospace" font-size="12">
+      <!-- Block 1: PUSHAD -->
+      <rect x="0" y="0" width="410" height="52" rx="6" fill="#1a1228" stroke="#6b21a8" stroke-width="1"/>
+      <text x="14" y="22" fill="#fb7185" font-weight="700">0x00420EA0: 60                 PUSHAD</text>
+      <text x="14" y="40" fill="#94a3b8">Saves 8 32-bit GP registers to stack frame</text>
+
+      <!-- Block 2: MOV ESI & LEA EDI -->
+      <rect x="0" y="62" width="410" height="66" rx="6" fill="#1a1228" stroke="#6b21a8" stroke-width="1"/>
+      <text x="14" y="20" fill="#f59e0b" font-weight="700">0x00420EA1: BE 00 70 41 00     MOV ESI, 0x00417000</text>
+      <text x="14" y="38" fill="#f59e0b" font-weight="700">0x00420EA6: 8D BE 00 10 FF FF  LEA EDI, [ESI - 0x16000]</text>
+      <text x="14" y="54" fill="#94a3b8">Sets source (UPX1) and destination (UPX0) memory pointers</text>
+
+      <!-- Block 3: Decompress Loop -->
+      <rect x="0" y="138" width="410" height="80" rx="6" fill="#0f1f2e" stroke="#0284c7" stroke-width="1"/>
+      <text x="14" y="20" fill="#38bdf8" font-weight="700">0x00420EB0: <tspan fill="#34d399">NRV2B_BIT_DECOMPRESS_LOOP</tspan></text>
+      <text x="14" y="38" fill="#cbd5e1">0x00420EB0: 8A 06              MOV AL, byte ptr [ESI]</text>
+      <text x="14" y="54" fill="#cbd5e1">0x00420EB2: 46                 INC ESI</text>
+      <text x="14" y="70" fill="#cbd5e1">0x00420EB3: 88 07              MOV byte ptr [EDI], AL</text>
+
+      <!-- Block 4: POPAD & JMP OEP -->
+      <rect x="0" y="228" width="410" height="68" rx="6" fill="#0f261e" stroke="#059669" stroke-width="1"/>
+      <text x="14" y="20" fill="#34d399" font-weight="700">0x00420FD8: 61                 POPAD</text>
+      <text x="14" y="38" fill="#34d399" font-weight="700">0x00420FFD: E9 73 14 FF FF     JMP 0x00412475 (OEP)</text>
+      <text x="14" y="56" fill="#6ee7b7">Tail jump to Original Entry Point (Plaintext Execution)</text>
+    </g>
+  </g>
+</svg>

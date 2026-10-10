@@ -37,6 +37,16 @@
 
 ---
 
+## 🖥️ Live Forensics & Decompilation Terminal Demo
+
+<p align="center">
+  <a href="https://github.com/maya-thorne/bat2exe-ghidra-forensics">
+    <img src="../../docs/assets/diagrams/ghidra_re_terminal_demo.svg" alt="Ghidra RE Live Terminal Demo" width="100%" />
+  </a>
+</p>
+
+---
+
 ## 🧬 End-to-End Binary Packing & Deobfuscation Topology
 
 ```mermaid
@@ -55,11 +65,31 @@ flowchart TD
 
     subgraph "Layer 3: Forensic Extraction & Deobfuscation Engine"
         P1 & P2 & P3 --> D1["Ghidra MCP Binary Triage & Disassembly\n(re_triage_binary / re_search_strings / re_disassemble_offset)"]
-        D1 --> D2["batch_deobfuscator & src/deobfuscator_engine.py\nMulti-Pass Pushdown Automaton & AST Variable Resolver"]
+        D1 --> D2["src/pe_stub_unpacker.py & src/deobfuscator_engine.py\nAutomated PE32 Dissector & AST Pushdown Automaton"]
         D1 --> D3["Exorcism (cmd.exe Runtime Detour)\ncmd.exe!FindFixAndRun (RVA 0x116B0) In-Memory Interceptor"]
         D2 & D3 --> R1["Recovered Plaintext Script + Sigma/YARA Signatures"]
     end
 ```
+
+---
+
+## ⚙️ Automated PE32 Bat2Exe Unpacking Pipeline
+
+<p align="center">
+  <a href="https://github.com/maya-thorne/bat2exe-ghidra-forensics">
+    <img src="../../docs/assets/diagrams/pe_stub_unpacking_pipeline.svg" alt="PE Stub Unpacking Pipeline" width="100%" />
+  </a>
+</p>
+
+---
+
+## 🔬 x86 Execution State & UPX NRV2B Register Transition Matrix
+
+<p align="center">
+  <a href="https://github.com/maya-thorne/bat2exe-ghidra-forensics">
+    <img src="../../docs/assets/diagrams/x86_register_schematic.svg" alt="x86 Register Schematic" width="100%" />
+  </a>
+</p>
 
 ---
 
@@ -97,12 +127,16 @@ All 3 compiled PE32 executables in the archive were dissected using `re_triage_b
 
 ---
 
-## 🚀 Quickstart: Running the Multi-Pass Static Deobfuscator Engine
+## 🚀 Quickstart: Running the Automated Forensics & Unpacker Engine
 
 ```bash
-# Run the 6-pass static batch deobfuscator & PE overlay analyzer
+# 1. Automated PE32 Bat2Exe unpacker and payload extractor
+python src/pe_stub_unpacker.py --input "01_배치난독화_GitHub_28종/Bat2Exe-dehoisted/Example/example.exe" --output "recovered.bat"
+
+# 2. Run the 6-pass static batch deobfuscator & PE overlay analyzer
 python src/deobfuscator_engine.py --input "03_고전_및_실전_연구샘플/samples/05_layered_complex_obf.bat"
 ```
+
 
 ---
 

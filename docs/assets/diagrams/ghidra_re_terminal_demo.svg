@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420" width="100%" height="100%">
+  <defs>
+    <linearGradient id="termBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0714"/>
+      <stop offset="100%" stop-color="#05070d"/>
+    </linearGradient>
+    <style>
+      @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+      .cursor { animation: blink 1s infinite; fill: #38bdf8; }
+      .prompt { fill: #f59e0b; font-weight: bold; }
+      .cmd { fill: #f1f5f9; font-weight: 600; }
+      .log { fill: #94a3b8; }
+      .success { fill: #34d399; font-weight: bold; }
+      .highlight { fill: #fb7185; }
+    </style>
+  </defs>
+
+  <rect width="900" height="420" rx="10" fill="url(#termBg)" stroke="#3b1d54" stroke-width="1.5"/>
+
+  <!-- Window Header -->
+  <rect width="900" height="32" rx="10" fill="#180e29"/>
+  <circle cx="20" cy="16" r="5" fill="#f43f5e"/>
+  <circle cx="36" cy="16" r="5" fill="#f59e0b"/>
+  <circle cx="52" cy="16" r="5" fill="#10b981"/>
+  <text x="450" y="21" fill="#cbd5e1" font-family="Consolas, monospace" font-size="11" text-anchor="middle" font-weight="600">
+    bat2exe-ghidra-forensics :: Live PE Forensics Console
+  </text>
+
+  <!-- Terminal Content -->
+  <g transform="translate(24, 60)" font-family="Consolas, monospace" font-size="12.5" line-height="1.6">
+    <text x="0" y="0"><tspan class="prompt">maya@lab:~$</tspan> <tspan class="cmd">python src/pe_stub_unpacker.py --input example.exe</tspan></text>
+    
+    <text x="0" y="28" fill="#64748b">========================================================================</text>
+    <text x="0" y="48"><tspan fill="#fb7185">🔬 bat2exe-ghidra-forensics</tspan> <tspan fill="#cbd5e1">:: PE32 Reverse Engineering Report</tspan></text>
+    <text x="0" y="68" fill="#64748b">========================================================================</text>
+    
+    <text x="0" y="96" class="log">Target Binary : <tspan fill="#f1f5f9">example.exe</tspan> (Bat2Exe-dehoisted CSharpCodeProvider)</text>
+    <text x="0" y="118" class="log">File Size     : <tspan fill="#f1f5f9">7,680 bytes</tspan> · PE Subsystem: <tspan fill="#38bdf8">PE32 (32-bit x86 CUI)</tspan></text>
+    <text x="0" y="140" class="log">Packer Stub   : <tspan class="highlight">.NET Managed Assembly (_CorExeMain RVA 0x337e)</tspan></text>
+    <text x="0" y="162" class="log">Sections (3)  : <tspan fill="#e2e8f0">.text (RVA 0x2000), .rsrc (RVA 0x4000), .reloc (RVA 0x6000)</tspan></text>
+    <text x="0" y="184" class="log">Extraction    : <tspan fill="#f59e0b">.NET Resource Heap &amp; #US Stream Parser</tspan></text>
+    <text x="0" y="206" class="log">Recovered     : <tspan class="success">YES (1,333 characters recovered)</tspan></text>
+    <text x="0" y="226" fill="#64748b">========================================================================</text>
+    
+    <text x="0" y="254" fill="#a855f7">--- [Recovered Script Preview] ---</text>
+    <text x="0" y="276" fill="#34d399">@echo off &amp;&amp; title example.bat</text>
+    <text x="0" y="296" fill="#6ee7b7">rem example.bat - Bat2Exe compilation payload decompiled cleanly</text>
+    <text x="0" y="316" fill="#a855f7">----------------------------------</text>
+    
+    <text x="0" y="344"><tspan class="prompt">maya@lab:~$</tspan> <rect x="108" y="332" width="8" height="15" class="cursor"/></text>
+  </g>
+</svg>

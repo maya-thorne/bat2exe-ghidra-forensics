@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0714"/>
+      <stop offset="50%" stop-color="#140e26"/>
+      <stop offset="100%" stop-color="#090a16"/>
+    </linearGradient>
+    <linearGradient id="neonTitle" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#fb7185"/>
+      <stop offset="50%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1000" height="500" rx="14" fill="url(#bgGrad)"/>
+  <rect x="1" y="1" width="998" height="498" rx="13" fill="none" stroke="#3b1d54" stroke-width="1.5"/>
+
+  <!-- Title -->
+  <g transform="translate(40, 40)">
+    <text x="0" y="0" fill="url(#neonTitle)" font-family="Consolas, monospace" font-size="20" font-weight="900">
+      AUTOMATED PE32 BAT2EXE FORENSIC UNPACKING PIPELINE
+    </text>
+    <text x="0" y="24" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12">
+      Static Header Triaging · Multi-Stub Dissection · In-Memory Payload Extraction · Plaintext Recovery
+    </text>
+  </g>
+
+  <!-- 4 Pipeline Stages -->
+  <g transform="translate(40, 100)">
+    <!-- Stage 1 -->
+    <g transform="translate(0, 0)">
+      <rect width="210" height="340" rx="10" fill="#0d091a" stroke="#fb7185" stroke-width="1.4"/>
+      <text x="16" y="28" fill="#fb7185" font-family="Consolas, monospace" font-size="13" font-weight="700">STAGE 1: TRIAGE</text>
+      <text x="16" y="46" fill="#fda4af" font-family="Consolas, monospace" font-size="10">PE HEADER PARSING</text>
+      <line x1="16" y1="56" x2="194" y2="56" stroke="#4c1d95" stroke-width="1"/>
+
+      <g transform="translate(16, 75)" font-family="Consolas, monospace" font-size="11" fill="#cbd5e1">
+        <text x="0" y="0" fill="#fcd34d">DOS MZ Header</text>
+        <text x="0" y="18">e_lfanew (Offset 0x3C)</text>
+        <text x="0" y="44" fill="#fcd34d">PE Signature</text>
+        <text x="0" y="62">"PE\0\0" at e_lfanew</text>
+        <text x="0" y="88" fill="#fcd34d">COFF &amp; Optional</text>
+        <text x="0" y="106">Machine: x86 / x64</text>
+        <text x="0" y="124">AddressOfEntryPoint</text>
+        <text x="0" y="150" fill="#fcd34d">Section Headers</text>
+        <text x="0" y="168">.text / .data / .rsrc</text>
+        <text x="0" y="186">UPX0 / UPX1 / Overlay</text>
+      </g>
+    </g>
+
+    <!-- Arrow 1 -->
+    <path d="M 220 170 L 236 170" stroke="#f59e0b" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <!-- Stage 2 -->
+    <g transform="translate(245, 0)">
+      <rect width="210" height="340" rx="10" fill="#0d091a" stroke="#f59e0b" stroke-width="1.4"/>
+      <text x="16" y="28" fill="#f59e0b" font-family="Consolas, monospace" font-size="13" font-weight="700">STAGE 2: CLASSIFY</text>
+      <text x="16" y="46" fill="#fcd34d" font-family="Consolas, monospace" font-size="10">PACKER HEURISTICS</text>
+      <line x1="16" y1="56" x2="194" y2="56" stroke="#4c1d95" stroke-width="1"/>
+
+      <g transform="translate(16, 75)" font-family="Consolas, monospace" font-size="11" fill="#cbd5e1">
+        <text x="0" y="0" fill="#38bdf8">UPX Native Stub</text>
+        <text x="0" y="18">Virtual &gt; Raw Size</text>
+        <text x="0" y="44" fill="#38bdf8">.NET CLR Managed</text>
+        <text x="0" y="62">_CorExeMain JMP</text>
+        <text x="0" y="80">#US Stream / Metadata</text>
+        <text x="0" y="106" fill="#38bdf8">VB6 Native Runtime</text>
+        <text x="0" y="124">ThunRTMain Call</text>
+        <text x="0" y="142">CHRMAPSET Table</text>
+        <text x="0" y="168" fill="#38bdf8">PE Overlay Stub</text>
+        <text x="0" y="186">Data past max_raw</text>
+      </g>
+    </g>
+
+    <!-- Arrow 2 -->
+    <path d="M 465 170 L 481 170" stroke="#f59e0b" stroke-width="2"/>
+
+    <!-- Stage 3 -->
+    <g transform="translate(490, 0)">
+      <rect width="210" height="340" rx="10" fill="#0d091a" stroke="#38bdf8" stroke-width="1.4"/>
+      <text x="16" y="28" fill="#38bdf8" font-family="Consolas, monospace" font-size="13" font-weight="700">STAGE 3: EXTRACT</text>
+      <text x="16" y="46" fill="#7dd3fc" font-family="Consolas, monospace" font-size="10">PAYLOAD DISSECTION</text>
+      <line x1="16" y1="56" x2="194" y2="56" stroke="#4c1d95" stroke-width="1"/>
+
+      <g transform="translate(16, 75)" font-family="Consolas, monospace" font-size="11" fill="#cbd5e1">
+        <text x="0" y="0" fill="#c084fc">Method 1: Disk Drop</text>
+        <text x="0" y="18">Scan for %TEMP%\temp.bat</text>
+        <text x="0" y="36">Resource "batch_cmd"</text>
+        <text x="0" y="62" fill="#c084fc">Method 2: In-Memory</text>
+        <text x="0" y="80">RedirectStandardInput</text>
+        <text x="0" y="98">prompt \b &amp; echo on</text>
+        <text x="0" y="124" fill="#c084fc">Method 3: Polyglot</text>
+        <text x="0" y="142">UTF-16LE BOM Strip</text>
+        <text x="0" y="160">0xFF 0xFE &amp;cls bypass</text>
+        <text x="0" y="186">Certutil Base64 decode</text>
+      </g>
+    </g>
+
+    <!-- Arrow 3 -->
+    <path d="M 710 170 L 726 170" stroke="#f59e0b" stroke-width="2"/>
+
+    <!-- Stage 4 -->
+    <g transform="translate(735, 0)">
+      <rect width="225" height="340" rx="10" fill="#0d091a" stroke="#34d399" stroke-width="1.4"/>
+      <text x="16" y="28" fill="#34d399" font-family="Consolas, monospace" font-size="13" font-weight="700">STAGE 4: RECOVER</text>
+      <text x="16" y="46" fill="#86efac" font-family="Consolas, monospace" font-size="10">OUTPUT &amp; SIGNATURES</text>
+      <line x1="16" y1="56" x2="209" y2="56" stroke="#4c1d95" stroke-width="1"/>
+
+      <g transform="translate(16, 75)" font-family="Consolas, monospace" font-size="11" fill="#cbd5e1">
+        <text x="0" y="0" fill="#34d399">Plaintext .bat File</text>
+        <text x="0" y="18">Clean UTF-8 script</text>
+        <text x="0" y="44" fill="#34d399">Forensic JSON Report</text>
+        <text x="0" y="62">PE Metadata &amp; Hashes</text>
+        <text x="0" y="80">Extraction Provenance</text>
+        <text x="0" y="106" fill="#34d399">Detection Artifacts</text>
+        <text x="0" y="124">YARA Match Rules</text>
+        <text x="0" y="142">Sigma Event Signatures</text>
+        <text x="0" y="168" fill="#86efac">100% Fully Verified</text>
+      </g>
+    </g>
+  </g>
+</svg>
