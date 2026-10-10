@@ -27,13 +27,73 @@
 
 ## 📑 Executive Summary & Master Whitepapers (핵심 역공학 백서 색인)
 
-| # | Document / Artifact | Core Scope & Forensic Coverage | Size |
-| :-: | :--- | :--- | :-: |
-| **1** | 🔬 **[DEEP_REVERSE_ENGINEERING_AND_SOURCE_ANALYSIS.md](./docs/whitepapers/DEEP_REVERSE_ENGINEERING_AND_SOURCE_ANALYSIS.md)** | **Ghidra MCP PE Binary Disassembly** (`bat2exe_12.exe`, `example.exe`, `BEDeCode.exe`) + **Line-by-Line Source Code Teardown of 8 Core Tools** (`Bat2Exe-dehoisted`, `Batch-Encryption-DeCoder`, `BatCloak`, `Invoke-DOSfuscation`, `SomalifuscatorV2`, `0xidiz3r`, `batch_deobfuscator`, `Exorcism`) | **42.8 KB** |
-| **2** | 🏗️ **[BATCH_OBFUSCATION_ARCHITECTURE_AND_CODE_ANALYSIS.md](./docs/whitepapers/BATCH_OBFUSCATION_ARCHITECTURE_AND_CODE_ANALYSIS.md)** | **Architectural Taxonomy & Parser Mechanics**: `cmd.exe` 5-Phase Expansion Order, Polyglot Header Exploitation, Pushdown Automaton AST Reconstruction, API Hooking (`FindFixAndRun`) | **43.7 KB** |
-| **3** | ⚙️ **[GHIDRA_BINARY_RE_AND_DEOBFUSCATOR_ENGINE_ANALYSIS.md](./docs/whitepapers/GHIDRA_BINARY_RE_AND_DEOBFUSCATOR_ENGINE_ANALYSIS.md)** | **Static & Dynamic Unpacking Pipeline**: PE Overlay Extraction, CLR `#US` Stream Recovery, Multi-Pass Regex/AST Deobfuscation Engine (`src/deobfuscator_engine.py`) | **44.4 KB** |
-| **4** | 📖 **[BATCH_OBFUSCATION_ENCYCLOPEDIA.md](./docs/whitepapers/BATCH_OBFUSCATION_ENCYCLOPEDIA.md)** | **48+ Open-Source & Hugging Face Reference Encyclopedia**: Complete classification of obfuscators, compilers, deobfuscators, and ML datasets | **30.3 KB** |
-| **5** | 🛡️ **[BATCH_OBFUSCATION_MASTER_GUIDE.md](./docs/whitepapers/BATCH_OBFUSCATION_MASTER_GUIDE.md)** | **30-Year Evolution (1990s–2026) & Defense Matrix**: Historical timeline, Mandiant/Unit 42 threat intelligence, production Sigma & YARA rulesets | **33.6 KB** |
+<table width="100%">
+  <thead>
+    <tr>
+      <th width="6%" align="center">#</th>
+      <th width="30%" align="left">📄 Document / Artifact</th>
+      <th width="54%" align="left">🔬 Core Scope &amp; Forensic Coverage</th>
+      <th width="10%" align="center">📦 Size</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center"><strong>1</strong></td>
+      <td>
+        🔬 <strong><a href="./docs/whitepapers/DEEP_REVERSE_ENGINEERING_AND_SOURCE_ANALYSIS.md">Deep Reverse Engineering</a></strong><br>
+        <code>DEEP_REVERSE_<wbr>ENGINEERING_<wbr>AND_SOURCE_ANALYSIS.md</code>
+      </td>
+      <td>
+        <strong>Ghidra MCP PE Binary Disassembly</strong> (<code>bat2exe_12.exe</code>, <code>example.exe</code>, <code>BEDeCode.exe</code>) + <strong>Line-by-Line Source Code Teardown of 8 Core Tools</strong> (<code>Bat2Exe-dehoisted</code>, <code>Batch-Encryption-DeCoder</code>, <code>BatCloak</code>, <code>Invoke-DOSfuscation</code>, <code>SomalifuscatorV2</code>, <code>0xidiz3r</code>, <code>batch_deobfuscator</code>, <code>Exorcism</code>).
+      </td>
+      <td align="center"><strong>42.8 KB</strong></td>
+    </tr>
+    <tr>
+      <td align="center"><strong>2</strong></td>
+      <td>
+        🏗️ <strong><a href="./docs/whitepapers/BATCH_OBFUSCATION_ARCHITECTURE_AND_CODE_ANALYSIS.md">Architecture &amp; Code Analysis</a></strong><br>
+        <code>BATCH_OBFUSCATION_<wbr>ARCHITECTURE_<wbr>AND_CODE_ANALYSIS.md</code>
+      </td>
+      <td>
+        <strong>Architectural Taxonomy &amp; Parser Mechanics</strong>: <code>cmd.exe</code> 5-Phase Expansion Order, Polyglot Header Exploitation, Pushdown Automaton AST Reconstruction, API Hooking (<code>FindFixAndRun</code>).
+      </td>
+      <td align="center"><strong>43.7 KB</strong></td>
+    </tr>
+    <tr>
+      <td align="center"><strong>3</strong></td>
+      <td>
+        ⚙️ <strong><a href="./docs/whitepapers/GHIDRA_BINARY_RE_AND_DEOBFUSCATOR_ENGINE_ANALYSIS.md">Binary RE &amp; Deobfuscator Engine</a></strong><br>
+        <code>GHIDRA_BINARY_RE_<wbr>AND_DEOBFUSCATOR_<wbr>ENGINE_ANALYSIS.md</code>
+      </td>
+      <td>
+        <strong>Static &amp; Dynamic Unpacking Pipeline</strong>: PE Overlay Extraction, CLR <code>#US</code> Stream Recovery, Multi-Pass Regex/AST Deobfuscation Engine (<code>src/deobfuscator_engine.py</code>).
+      </td>
+      <td align="center"><strong>44.4 KB</strong></td>
+    </tr>
+    <tr>
+      <td align="center"><strong>4</strong></td>
+      <td>
+        📖 <strong><a href="./docs/whitepapers/BATCH_OBFUSCATION_ENCYCLOPEDIA.md">Master Encyclopedia (v2.0)</a></strong><br>
+        <code>BATCH_OBFUSCATION_<wbr>ENCYCLOPEDIA.md</code>
+      </td>
+      <td>
+        <strong>48+ Open-Source &amp; Hugging Face Reference Encyclopedia</strong>: Complete classification of obfuscators, compilers, deobfuscators, and ML datasets.
+      </td>
+      <td align="center"><strong>30.3 KB</strong></td>
+    </tr>
+    <tr>
+      <td align="center"><strong>5</strong></td>
+      <td>
+        🛡️ <strong><a href="./docs/whitepapers/BATCH_OBFUSCATION_MASTER_GUIDE.md">30-Year Evolution &amp; Guide</a></strong><br>
+        <code>BATCH_OBFUSCATION_<wbr>MASTER_GUIDE.md</code>
+      </td>
+      <td>
+        <strong>30-Year Evolution (1990s–2026) &amp; Defense Matrix</strong>: Historical timeline, Mandiant/Unit 42 threat intelligence, production Sigma &amp; YARA rulesets.
+      </td>
+      <td align="center"><strong>33.6 KB</strong></td>
+    </tr>
+  </tbody>
+</table>
 
 ---
 
@@ -97,11 +157,69 @@ flowchart TD
 
 All 3 compiled PE32 executables in the archive were dissected using `re_triage_binary`, `re_search_strings`, and `re_disassemble_offset`:
 
-| Target Binary | Architecture & Subsystem | Entry Point RVA | Sections & Entropy | Key Disassembly & Runtime Mechanism |
-| :--- | :--- | :-: | :--- | :--- |
-| **`bat2exe_12.exe`** | PE32 x86 (32-bit) · Windows GUI (`2`) | `0x20ea0` | `UPX0` (Virt `0x17000`, Raw `0`), `UPX1` (7.89 bits/byte), `.rsrc` | `0x20ea0: PUSHAD` ➔ `MOV ESI, 0x417000` ➔ `LEA EDI, [ESI - 0x16000]` ➔ NRV2B bit-stream decompression loop ➔ IAT rebuild (`LoadLibraryA`/`GetProcAddress`) ➔ `0x20ffd: JMP 0x00412475` (OEP). |
-| **`example.exe`** (`Bat2Exe-dehoisted`) | PE32 x86 (.NET CLR Managed) · Windows CUI (`3`) | `0x337e` | `.text` (5.64), `.rsrc` (3.99), `.reloc` (0.18) | `0x337e: FF 25 00 20 40 00 (JMP dword ptr [0x00402000])` ➔ `mscoree.dll!_CorExeMain`. Embeds UTF-16LE user strings at `0x143b` (`"batch_cmd"`), `0x1465` (`"\\temp.bat"`), `0x1541` (`"/c prompt \b & echo on"`). |
-| **`BEDeCode.exe`** (`Batch-Encryption-DeCoder`) | PE32 x86 (VB6 Native Code) · Windows GUI (`2`) | `0x1670` | `.text` (5.43), `.data` (0.00), `.rsrc` (3.55) | `0x1670: 68 68 19 40 00 (PUSH 0x401968)` ➔ `E8 EF FF FF FF (CALL ThunRTMain)` in `MSVBVM60.DLL`. Implements `CmdCode_Click` (`%%a` + `CHRMAPSET` substitution) and `CmdDeCode_Click` (`Replace(txt, "%", "")`). |
+<table width="100%">
+  <thead>
+    <tr>
+      <th width="20%" align="left">🎯 Target Binary</th>
+      <th width="16%" align="left">🏗️ Architecture</th>
+      <th width="12%" align="center">📍 Entry Point</th>
+      <th width="16%" align="left">📊 Sections &amp; Entropy</th>
+      <th width="36%" align="left">🔬 Key Disassembly &amp; Runtime Mechanism</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <strong><code>bat2exe_12.exe</code></strong><br>
+        <small>(<code>UPX Container</code>)</small>
+      </td>
+      <td>PE32 x86<br><sub>Windows GUI (<code>2</code>)</sub></td>
+      <td align="center"><code>0x20ea0</code></td>
+      <td>
+        <code>UPX0</code> (<code>0x17000</code>, raw <code>0</code>)<br>
+        <code>UPX1</code> (<code>7.89</code> b/B)<br>
+        <code>.rsrc</code>
+      </td>
+      <td>
+        <code>0x20ea0: PUSHAD</code> ➔ <code>MOV ESI, 0x417000</code> ➔ <code>LEA EDI, [ESI - 0x16000]</code> ➔ NRV2B bit-stream decompression loop ➔ IAT rebuild (<code>LoadLibraryA</code> / <code>GetProcAddress</code>) ➔ <code>0x20ffd: JMP 0x00412475</code> (OEP).
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <strong><code>example.exe</code></strong><br>
+        <small>(<code>Bat2Exe-dehoisted</code>)</small>
+      </td>
+      <td>PE32 x86<br><sub>.NET CLR CUI (<code>3</code>)</sub></td>
+      <td align="center"><code>0x337e</code></td>
+      <td>
+        <code>.text</code> (<code>5.64</code>)<br>
+        <code>.rsrc</code> (<code>3.99</code>)<br>
+        <code>.reloc</code> (<code>0.18</code>)
+      </td>
+      <td>
+        <code>0x337e: FF 25 00 20 40 00 (JMP [0x00402000])</code> ➔ <code>mscoree.dll!_CorExeMain</code>.<br>
+        Embeds UTF-16LE user strings at <code>0x143b ("batch_cmd")</code>, <code>0x1465 ("\\temp.bat")</code>, <code>0x1541 ("/c prompt \b &amp; echo on")</code>.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <strong><code>BEDeCode.exe</code></strong><br>
+        <small>(<code>Batch-Encryption-DeCoder</code>)</small>
+      </td>
+      <td>PE32 x86<br><sub>VB6 Native GUI (<code>2</code>)</sub></td>
+      <td align="center"><code>0x1670</code></td>
+      <td>
+        <code>.text</code> (<code>5.43</code>)<br>
+        <code>.data</code> (<code>0.00</code>)<br>
+        <code>.rsrc</code> (<code>3.55</code>)
+      </td>
+      <td>
+        <code>0x1670: 68 68 19 40 00 (PUSH 0x401968)</code> ➔ <code>E8 EF FF FF FF (CALL ThunRTMain)</code> in <code>MSVBVM60.DLL</code>.<br>
+        Implements <code>CmdCode_Click</code> (<code>%%a</code> + <code>CHRMAPSET</code>) and <code>CmdDeCode_Click</code> (<code>Replace(txt, "%", "")</code>).
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 ---
 
