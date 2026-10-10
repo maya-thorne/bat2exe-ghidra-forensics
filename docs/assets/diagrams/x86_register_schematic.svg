@@ -98,28 +98,36 @@
     <!-- Assembly instructions -->
     <g transform="translate(20, 60)" font-family="Consolas, monospace" font-size="12">
       <!-- Block 1: PUSHAD -->
-      <rect x="0" y="0" width="410" height="52" rx="6" fill="#1a1228" stroke="#6b21a8" stroke-width="1"/>
-      <text x="14" y="22" fill="#fb7185" font-weight="700">0x00420EA0: 60                 PUSHAD</text>
-      <text x="14" y="40" fill="#94a3b8">Saves 8 32-bit GP registers to stack frame</text>
+      <g transform="translate(0, 0)">
+        <rect x="0" y="0" width="410" height="54" rx="6" fill="#1a1228" stroke="#6b21a8" stroke-width="1"/>
+        <text x="14" y="22" fill="#fb7185" font-weight="700">0x00420EA0: 60                 PUSHAD</text>
+        <text x="14" y="40" fill="#94a3b8">Saves 8 32-bit GP registers to stack frame</text>
+      </g>
 
       <!-- Block 2: MOV ESI & LEA EDI -->
-      <rect x="0" y="62" width="410" height="66" rx="6" fill="#1a1228" stroke="#6b21a8" stroke-width="1"/>
-      <text x="14" y="20" fill="#f59e0b" font-weight="700">0x00420EA1: BE 00 70 41 00     MOV ESI, 0x00417000</text>
-      <text x="14" y="38" fill="#f59e0b" font-weight="700">0x00420EA6: 8D BE 00 10 FF FF  LEA EDI, [ESI - 0x16000]</text>
-      <text x="14" y="54" fill="#94a3b8">Sets source (UPX1) and destination (UPX0) memory pointers</text>
+      <g transform="translate(0, 66)">
+        <rect x="0" y="0" width="410" height="70" rx="6" fill="#1a1228" stroke="#6b21a8" stroke-width="1"/>
+        <text x="14" y="20" fill="#f59e0b" font-weight="700">0x00420EA1: BE 00 70 41 00     MOV ESI, 0x00417000</text>
+        <text x="14" y="38" fill="#f59e0b" font-weight="700">0x00420EA6: 8D BE 00 10 FF FF  LEA EDI, [ESI - 0x16000]</text>
+        <text x="14" y="56" fill="#94a3b8">Sets source (UPX1) and destination (UPX0) memory pointers</text>
+      </g>
 
       <!-- Block 3: Decompress Loop -->
-      <rect x="0" y="138" width="410" height="80" rx="6" fill="#0f1f2e" stroke="#0284c7" stroke-width="1"/>
-      <text x="14" y="20" fill="#38bdf8" font-weight="700">0x00420EB0: <tspan fill="#34d399">NRV2B_BIT_DECOMPRESS_LOOP</tspan></text>
-      <text x="14" y="38" fill="#cbd5e1">0x00420EB0: 8A 06              MOV AL, byte ptr [ESI]</text>
-      <text x="14" y="54" fill="#cbd5e1">0x00420EB2: 46                 INC ESI</text>
-      <text x="14" y="70" fill="#cbd5e1">0x00420EB3: 88 07              MOV byte ptr [EDI], AL</text>
+      <g transform="translate(0, 148)">
+        <rect x="0" y="0" width="410" height="92" rx="6" fill="#0f1f2e" stroke="#0284c7" stroke-width="1"/>
+        <text x="14" y="20" fill="#38bdf8" font-weight="700">0x00420EB0: <tspan fill="#34d399">NRV2B_BIT_DECOMPRESS_LOOP</tspan></text>
+        <text x="14" y="38" fill="#cbd5e1">0x00420EB0: 8A 06              MOV AL, byte ptr [ESI]</text>
+        <text x="14" y="54" fill="#cbd5e1">0x00420EB2: 46                 INC ESI</text>
+        <text x="14" y="70" fill="#cbd5e1">0x00420EB3: 88 07              MOV byte ptr [EDI], AL</text>
+      </g>
 
       <!-- Block 4: POPAD & JMP OEP -->
-      <rect x="0" y="228" width="410" height="68" rx="6" fill="#0f261e" stroke="#059669" stroke-width="1"/>
-      <text x="14" y="20" fill="#34d399" font-weight="700">0x00420FD8: 61                 POPAD</text>
-      <text x="14" y="38" fill="#34d399" font-weight="700">0x00420FFD: E9 73 14 FF FF     JMP 0x00412475 (OEP)</text>
-      <text x="14" y="56" fill="#6ee7b7">Tail jump to Original Entry Point (Plaintext Execution)</text>
+      <g transform="translate(0, 252)">
+        <rect x="0" y="0" width="410" height="70" rx="6" fill="#0f261e" stroke="#059669" stroke-width="1"/>
+        <text x="14" y="20" fill="#34d399" font-weight="700">0x00420FD8: 61                 POPAD</text>
+        <text x="14" y="38" fill="#34d399" font-weight="700">0x00420FFD: E9 73 14 FF FF     JMP 0x00412475 (OEP)</text>
+        <text x="14" y="56" fill="#6ee7b7">Tail jump to Original Entry Point (Plaintext Execution)</text>
+      </g>
     </g>
   </g>
 </svg>
