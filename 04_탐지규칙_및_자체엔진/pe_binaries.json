@@ -1,0 +1,412 @@
+[
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\_BY_PASSS\\github\\01_저장소_프로젝트\\github-org-map\\node_modules\\@esbuild\\win32-x64\\esbuild.exe",
+    "rel": "github\\01_저장소_프로젝트\\github-org-map\\node_modules\\@esbuild\\win32-x64\\esbuild.exe",
+    "size": 11694592
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\_BY_PASSS\\github\\01_저장소_프로젝트\\github-org-map\\node_modules\\@img\\sharp-win32-x64\\lib\\libvips-42.dll",
+    "rel": "github\\01_저장소_프로젝트\\github-org-map\\node_modules\\@img\\sharp-win32-x64\\lib\\libvips-42.dll",
+    "size": 18614784
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\_BY_PASSS\\github\\01_저장소_프로젝트\\github-org-map\\node_modules\\@img\\sharp-win32-x64\\lib\\libvips-cpp-8.18.6.dll",
+    "rel": "github\\01_저장소_프로젝트\\github-org-map\\node_modules\\@img\\sharp-win32-x64\\lib\\libvips-cpp-8.18.6.dll",
+    "size": 333312
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\_BY_PASSS\\github\\References\\01_배치난독화_GitHub_28종\\bat2exe-123Studios\\BatchIDE\\bin\\Debug\\BatchObfuscator.exe",
+    "rel": "github\\References\\01_배치난독화_GitHub_28종\\bat2exe-123Studios\\BatchIDE\\bin\\Debug\\BatchObfuscator.exe",
+    "size": 32256
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\_BY_PASSS\\github\\References\\01_배치난독화_GitHub_28종\\bat2exe-123Studios\\BatchIDE\\bin\\Debug\\Bunifu_UI_v1.52.dll",
+    "rel": "github\\References\\01_배치난독화_GitHub_28종\\bat2exe-123Studios\\BatchIDE\\bin\\Debug\\Bunifu_UI_v1.52.dll",
+    "size": 225792
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\_BY_PASSS\\github\\References\\01_배치난독화_GitHub_28종\\bat2exe-123Studios\\BatchIDE\\bin\\Debug\\DiscordRPC.dll",
+    "rel": "github\\References\\01_배치난독화_GitHub_28종\\bat2exe-123Studios\\BatchIDE\\bin\\Debug\\DiscordRPC.dll",
+    "size": 81408
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\_BY_PASSS\\github\\References\\01_배치난독화_GitHub_28종\\bat2exe-123Studios\\BatchIDE\\bin\\Debug\\MaterialSkin.dll",
+    "rel": "github\\References\\01_배치난독화_GitHub_28종\\bat2exe-123Studios\\BatchIDE\\bin\\Debug\\MaterialSkin.dll",
+    "size": 6742528
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\_BY_PASSS\\github\\References\\01_배치난독화_GitHub_28종\\bat2exe-123Studios\\BatchIDE\\bin\\Debug\\Microsoft.Toolkit.Uwp.Notifications.dll",
+    "rel": "github\\References\\01_배치난독화_GitHub_28종\\bat2exe-123Studios\\BatchIDE\\bin\\Debug\\Microsoft.Toolkit.Uwp.Notifications.dll",
+    "size": 143568
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\_BY_PASSS\\github\\References\\01_배치난독화_GitHub_28종\\bat2exe-123Studios\\BatchIDE\\bin\\Debug\\Newtonsoft.Json.dll",
+    "rel": "github\\References\\01_배치난독화_GitHub_28종\\bat2exe-123Studios\\BatchIDE\\bin\\Debug\\Newtonsoft.Json.dll",
+    "size": 675752
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\_BY_PASSS\\github\\References\\01_배치난독화_GitHub_28종\\bat2exe-123Studios\\BatchIDE\\bin\\Debug\\Obfuscator.dll",
+    "rel": "github\\References\\01_배치난독화_GitHub_28종\\bat2exe-123Studios\\BatchIDE\\bin\\Debug\\Obfuscator.dll",
+    "size": 12288
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\_BY_PASSS\\github\\References\\01_배치난독화_GitHub_28종\\bat2exe-123Studios\\BatchIDE\\bin\\Debug\\ReaLTaiizor.dll",
+    "rel": "github\\References\\01_배치난독화_GitHub_28종\\bat2exe-123Studios\\BatchIDE\\bin\\Debug\\ReaLTaiizor.dll",
+    "size": 6368768
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\_BY_PASSS\\github\\References\\01_배치난독화_GitHub_28종\\bat2exe-123Studios\\BatchIDE\\bin\\Debug\\System.ValueTuple.dll",
+    "rel": "github\\References\\01_배치난독화_GitHub_28종\\bat2exe-123Studios\\BatchIDE\\bin\\Debug\\System.ValueTuple.dll",
+    "size": 25232
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\_BY_PASSS\\github\\References\\01_배치난독화_GitHub_28종\\bat2exe-123Studios\\BatchIDE\\bin\\Debug\\csc\\csc.exe",
+    "rel": "github\\References\\01_배치난독화_GitHub_28종\\bat2exe-123Studios\\BatchIDE\\bin\\Debug\\csc\\csc.exe",
+    "size": 58232
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\_BY_PASSS\\github\\References\\01_배치난독화_GitHub_28종\\bat2exe-123Studios\\BatchIDE\\bin\\Debug\\csc\\Microsoft.Build.Tasks.CodeAnalysis.dll",
+    "rel": "github\\References\\01_배치난독화_GitHub_28종\\bat2exe-123Studios\\BatchIDE\\bin\\Debug\\csc\\Microsoft.Build.Tasks.CodeAnalysis.dll",
+    "size": 137104
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\_BY_PASSS\\github\\References\\01_배치난독화_GitHub_28종\\bat2exe-123Studios\\BatchIDE\\bin\\Debug\\csc\\Microsoft.CodeAnalysis.CSharp.dll",
+    "rel": "github\\References\\01_배치난독화_GitHub_28종\\bat2exe-123Studios\\BatchIDE\\bin\\Debug\\csc\\Microsoft.CodeAnalysis.CSharp.dll",
+    "size": 6098320
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\_BY_PASSS\\github\\References\\01_배치난독화_GitHub_28종\\bat2exe-123Studios\\BatchIDE\\bin\\Debug\\csc\\Microsoft.CodeAnalysis.CSharp.Scripting.dll",
+    "rel": "github\\References\\01_배치난독화_GitHub_28종\\bat2exe-123Studios\\BatchIDE\\bin\\Debug\\csc\\Microsoft.CodeAnalysis.CSharp.Scripting.dll",
+    "size": 31632
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\_BY_PASSS\\github\\References\\01_배치난독화_GitHub_28종\\bat2exe-123Studios\\BatchIDE\\bin\\Debug\\csc\\Microsoft.CodeAnalysis.dll",
+    "rel": "github\\References\\01_배치난독화_GitHub_28종\\bat2exe-123Studios\\BatchIDE\\bin\\Debug\\csc\\Microsoft.CodeAnalysis.dll",
+    "size": 2903440
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\_BY_PASSS\\github\\References\\01_배치난독화_GitHub_28종\\bat2exe-123Studios\\BatchIDE\\bin\\Debug\\csc\\Microsoft.CodeAnalysis.Scripting.dll",
+    "rel": "github\\References\\01_배치난독화_GitHub_28종\\bat2exe-123Studios\\BatchIDE\\bin\\Debug\\csc\\Microsoft.CodeAnalysis.Scripting.dll",
+    "size": 135568
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\_BY_PASSS\\github\\References\\01_배치난독화_GitHub_28종\\bat2exe-123Studios\\BatchIDE\\bin\\Debug\\csc\\Microsoft.CodeAnalysis.VisualBasic.dll",
+    "rel": "github\\References\\01_배치난독화_GitHub_28종\\bat2exe-123Studios\\BatchIDE\\bin\\Debug\\csc\\Microsoft.CodeAnalysis.VisualBasic.dll",
+    "size": 5229968
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\_BY_PASSS\\github\\References\\01_배치난독화_GitHub_28종\\bat2exe-123Studios\\BatchIDE\\bin\\Debug\\csc\\Microsoft.DiaSymReader.Native.amd64.dll",
+    "rel": "github\\References\\01_배치난독화_GitHub_28종\\bat2exe-123Studios\\BatchIDE\\bin\\Debug\\csc\\Microsoft.DiaSymReader.Native.amd64.dll",
+    "size": 1813896
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\_BY_PASSS\\github\\References\\01_배치난독화_GitHub_28종\\bat2exe-123Studios\\BatchIDE\\bin\\Debug\\csc\\Microsoft.DiaSymReader.Native.x86.dll",
+    "rel": "github\\References\\01_배치난독화_GitHub_28종\\bat2exe-123Studios\\BatchIDE\\bin\\Debug\\csc\\Microsoft.DiaSymReader.Native.x86.dll",
+    "size": 1529728
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\_BY_PASSS\\github\\References\\01_배치난독화_GitHub_28종\\bat2exe-123Studios\\BatchIDE\\bin\\Debug\\csc\\System.Buffers.dll",
+    "rel": "github\\References\\01_배치난독화_GitHub_28종\\bat2exe-123Studios\\BatchIDE\\bin\\Debug\\csc\\System.Buffers.dll",
+    "size": 20856
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\_BY_PASSS\\github\\References\\01_배치난독화_GitHub_28종\\bat2exe-123Studios\\BatchIDE\\bin\\Debug\\csc\\System.Collections.Immutable.dll",
+    "rel": "github\\References\\01_배치난독화_GitHub_28종\\bat2exe-123Studios\\BatchIDE\\bin\\Debug\\csc\\System.Collections.Immutable.dll",
+    "size": 278120
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\_BY_PASSS\\github\\References\\01_배치난독화_GitHub_28종\\bat2exe-123Studios\\BatchIDE\\bin\\Debug\\csc\\System.Memory.dll",
+    "rel": "github\\References\\01_배치난독화_GitHub_28종\\bat2exe-123Studios\\BatchIDE\\bin\\Debug\\csc\\System.Memory.dll",
+    "size": 141184
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\_BY_PASSS\\github\\References\\01_배치난독화_GitHub_28종\\bat2exe-123Studios\\BatchIDE\\bin\\Debug\\csc\\System.Numerics.Vectors.dll",
+    "rel": "github\\References\\01_배치난독화_GitHub_28종\\bat2exe-123Studios\\BatchIDE\\bin\\Debug\\csc\\System.Numerics.Vectors.dll",
+    "size": 115856
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\_BY_PASSS\\github\\References\\01_배치난독화_GitHub_28종\\bat2exe-123Studios\\BatchIDE\\bin\\Debug\\csc\\System.Reflection.Metadata.dll",
+    "rel": "github\\References\\01_배치난독화_GitHub_28종\\bat2exe-123Studios\\BatchIDE\\bin\\Debug\\csc\\System.Reflection.Metadata.dll",
+    "size": 521304
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\_BY_PASSS\\github\\References\\01_배치난독화_GitHub_28종\\bat2exe-123Studios\\BatchIDE\\bin\\Debug\\csc\\System.Runtime.CompilerServices.Unsafe.dll",
+    "rel": "github\\References\\01_배치난독화_GitHub_28종\\bat2exe-123Studios\\BatchIDE\\bin\\Debug\\csc\\System.Runtime.CompilerServices.Unsafe.dll",
+    "size": 19328
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\_BY_PASSS\\github\\References\\01_배치난독화_GitHub_28종\\bat2exe-123Studios\\BatchIDE\\bin\\Debug\\csc\\System.Text.Encoding.CodePages.dll",
+    "rel": "github\\References\\01_배치난독화_GitHub_28종\\bat2exe-123Studios\\BatchIDE\\bin\\Debug\\csc\\System.Text.Encoding.CodePages.dll",
+    "size": 761392
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\_BY_PASSS\\github\\References\\01_배치난독화_GitHub_28종\\bat2exe-123Studios\\BatchIDE\\bin\\Debug\\csc\\System.Threading.Tasks.Extensions.dll",
+    "rel": "github\\References\\01_배치난독화_GitHub_28종\\bat2exe-123Studios\\BatchIDE\\bin\\Debug\\csc\\System.Threading.Tasks.Extensions.dll",
+    "size": 25984
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\_BY_PASSS\\github\\References\\01_배치난독화_GitHub_28종\\Bat2Exe-dehoisted\\Dependencies\\bytepress.exe",
+    "rel": "github\\References\\01_배치난독화_GitHub_28종\\Bat2Exe-dehoisted\\Dependencies\\bytepress.exe",
+    "size": 74240
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\_BY_PASSS\\github\\References\\01_배치난독화_GitHub_28종\\Bat2Exe-dehoisted\\Dependencies\\bytepress.lib.dll",
+    "rel": "github\\References\\01_배치난독화_GitHub_28종\\Bat2Exe-dehoisted\\Dependencies\\bytepress.lib.dll",
+    "size": 44032
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\_BY_PASSS\\github\\References\\01_배치난독화_GitHub_28종\\Bat2Exe-dehoisted\\Dependencies\\Guna.UI2.dll",
+    "rel": "github\\References\\01_배치난독화_GitHub_28종\\Bat2Exe-dehoisted\\Dependencies\\Guna.UI2.dll",
+    "size": 2140104
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\_BY_PASSS\\github\\References\\01_배치난독화_GitHub_28종\\Bat2Exe-dehoisted\\Dependencies\\NDesk.Options.dll",
+    "rel": "github\\References\\01_배치난독화_GitHub_28종\\Bat2Exe-dehoisted\\Dependencies\\NDesk.Options.dll",
+    "size": 22016
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\_BY_PASSS\\github\\References\\01_배치난독화_GitHub_28종\\Bat2Exe-dehoisted\\Example\\example.exe",
+    "rel": "github\\References\\01_배치난독화_GitHub_28종\\Bat2Exe-dehoisted\\Example\\example.exe",
+    "size": 7680
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\_BY_PASSS\\github\\References\\01_배치난독화_GitHub_28종\\Bat2Exe-dehoisted\\Example\\example_bytepressed.exe",
+    "rel": "github\\References\\01_배치난독화_GitHub_28종\\Bat2Exe-dehoisted\\Example\\example_bytepressed.exe",
+    "size": 53248
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\_BY_PASSS\\github\\References\\01_배치난독화_GitHub_28종\\Bat2Exe-dehoisted\\Example\\example_encoded.exe",
+    "rel": "github\\References\\01_배치난독화_GitHub_28종\\Bat2Exe-dehoisted\\Example\\example_encoded.exe",
+    "size": 6656
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\_BY_PASSS\\github\\References\\01_배치난독화_GitHub_28종\\Bat2Exe-dehoisted\\Example\\example_obfuscated.exe",
+    "rel": "github\\References\\01_배치난독화_GitHub_28종\\Bat2Exe-dehoisted\\Example\\example_obfuscated.exe",
+    "size": 26624
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\_BY_PASSS\\github\\References\\01_배치난독화_GitHub_28종\\bat2exe-islamadel\\source\\archiv\\bat2exe_12.exe",
+    "rel": "github\\References\\01_배치난독화_GitHub_28종\\bat2exe-islamadel\\source\\archiv\\bat2exe_12.exe",
+    "size": 1079589
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\_BY_PASSS\\github\\References\\01_배치난독화_GitHub_28종\\bat2exe-islamadel\\source\\workspace\\bin\\7z.dll",
+    "rel": "github\\References\\01_배치난독화_GitHub_28종\\bat2exe-islamadel\\source\\workspace\\bin\\7z.dll",
+    "size": 1891840
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\_BY_PASSS\\github\\References\\01_배치난독화_GitHub_28종\\bat2exe-islamadel\\source\\workspace\\bin\\7z.exe",
+    "rel": "github\\References\\01_배치난독화_GitHub_28종\\bat2exe-islamadel\\source\\workspace\\bin\\7z.exe",
+    "size": 561152
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\_BY_PASSS\\github\\References\\01_배치난독화_GitHub_28종\\bat2exe-islamadel\\source\\workspace\\bin\\choice.exe",
+    "rel": "github\\References\\01_배치난독화_GitHub_28종\\bat2exe-islamadel\\source\\workspace\\bin\\choice.exe",
+    "size": 49152
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\_BY_PASSS\\github\\References\\01_배치난독화_GitHub_28종\\bat2exe-islamadel\\source\\workspace\\bin\\rcedit-x64.exe",
+    "rel": "github\\References\\01_배치난독화_GitHub_28종\\bat2exe-islamadel\\source\\workspace\\bin\\rcedit-x64.exe",
+    "size": 1360384
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\_BY_PASSS\\github\\References\\01_배치난독화_GitHub_28종\\Batch-Encryption-DeCoder\\bin\\BEDeCode.exe",
+    "rel": "github\\References\\01_배치난독화_GitHub_28종\\Batch-Encryption-DeCoder\\bin\\BEDeCode.exe",
+    "size": 69632
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\_BY_PASSS\\github\\References\\01_배치난독화_GitHub_28종\\BatchStealer-Takaovi\\screenshot.exe",
+    "rel": "github\\References\\01_배치난독화_GitHub_28종\\BatchStealer-Takaovi\\screenshot.exe",
+    "size": 161280
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\_BY_PASSS\\github\\References\\01_배치난독화_GitHub_28종\\JSBatchDeobfuscator-yrotak\\Batch_Deobfuscator\\bin\\Debug\\Batch_Deobfuscator.exe",
+    "rel": "github\\References\\01_배치난독화_GitHub_28종\\JSBatchDeobfuscator-yrotak\\Batch_Deobfuscator\\bin\\Debug\\Batch_Deobfuscator.exe",
+    "size": 7168
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\_BY_PASSS\\github\\References\\01_배치난독화_GitHub_28종\\JSBatchDeobfuscator-yrotak\\Batch_Deobfuscator\\obj\\Debug\\Batch_Deobfuscator.exe",
+    "rel": "github\\References\\01_배치난독화_GitHub_28종\\JSBatchDeobfuscator-yrotak\\Batch_Deobfuscator\\obj\\Debug\\Batch_Deobfuscator.exe",
+    "size": 7168
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\_BY_PASSS\\[01_백신우회_난독화]\\01_DOTNET_난독화\\ArmDotSetup_2024.1.0.0.exe",
+    "rel": "[01_백신우회_난독화]\\01_DOTNET_난독화\\ArmDotSetup_2024.1.0.0.exe",
+    "size": 5035088
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\_BY_PASSS\\[01_백신우회_난독화]\\01_DOTNET_난독화\\DeepSeaSetup.exe",
+    "rel": "[01_백신우회_난독화]\\01_DOTNET_난독화\\DeepSeaSetup.exe",
+    "size": 5608968
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\_BY_PASSS\\[01_백신우회_난독화]\\01_DOTNET_난독화\\dotnet_reactor_setup_6_9_8_0.exe",
+    "rel": "[01_백신우회_난독화]\\01_DOTNET_난독화\\dotnet_reactor_setup_6_9_8_0.exe",
+    "size": 16824176
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\_BY_PASSS\\[01_백신우회_난독화]\\01_DOTNET_난독화\\intellilock_setup_3_0_0_0.exe",
+    "rel": "[01_백신우회_난독화]\\01_DOTNET_난독화\\intellilock_setup_3_0_0_0.exe",
+    "size": 15793552
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\_BY_PASSS\\[01_백신우회_난독화]\\01_DOTNET_난독화\\ConfuserEx-GUI\\CommonServiceLocator.dll",
+    "rel": "[01_백신우회_난독화]\\01_DOTNET_난독화\\ConfuserEx-GUI\\CommonServiceLocator.dll",
+    "size": 9728
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\_BY_PASSS\\[01_백신우회_난독화]\\01_DOTNET_난독화\\ConfuserEx-GUI\\Confuser.Core.dll",
+    "rel": "[01_백신우회_난독화]\\01_DOTNET_난독화\\ConfuserEx-GUI\\Confuser.Core.dll",
+    "size": 194560
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\_BY_PASSS\\[01_백신우회_난독화]\\01_DOTNET_난독화\\ConfuserEx-GUI\\Confuser.DynCipher.dll",
+    "rel": "[01_백신우회_난독화]\\01_DOTNET_난독화\\ConfuserEx-GUI\\Confuser.DynCipher.dll",
+    "size": 47616
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\_BY_PASSS\\[01_백신우회_난독화]\\01_DOTNET_난독화\\ConfuserEx-GUI\\Confuser.Protections.dll",
+    "rel": "[01_백신우회_난독화]\\01_DOTNET_난독화\\ConfuserEx-GUI\\Confuser.Protections.dll",
+    "size": 153600
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\_BY_PASSS\\[01_백신우회_난독화]\\01_DOTNET_난독화\\ConfuserEx-GUI\\Confuser.Renamer.dll",
+    "rel": "[01_백신우회_난독화]\\01_DOTNET_난독화\\ConfuserEx-GUI\\Confuser.Renamer.dll",
+    "size": 358912
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\_BY_PASSS\\[01_백신우회_난독화]\\01_DOTNET_난독화\\ConfuserEx-GUI\\Confuser.Runtime.dll",
+    "rel": "[01_백신우회_난독화]\\01_DOTNET_난독화\\ConfuserEx-GUI\\Confuser.Runtime.dll",
+    "size": 46080
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\_BY_PASSS\\[01_백신우회_난독화]\\01_DOTNET_난독화\\ConfuserEx-GUI\\ConfuserEx.exe",
+    "rel": "[01_백신우회_난독화]\\01_DOTNET_난독화\\ConfuserEx-GUI\\ConfuserEx.exe",
+    "size": 277504
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\_BY_PASSS\\[01_백신우회_난독화]\\01_DOTNET_난독화\\ConfuserEx-GUI\\dnlib.dll",
+    "rel": "[01_백신우회_난독화]\\01_DOTNET_난독화\\ConfuserEx-GUI\\dnlib.dll",
+    "size": 1160704
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\_BY_PASSS\\[01_백신우회_난독화]\\01_DOTNET_난독화\\ConfuserEx-GUI\\GalaSoft.MvvmLight.dll",
+    "rel": "[01_백신우회_난독화]\\01_DOTNET_난독화\\ConfuserEx-GUI\\GalaSoft.MvvmLight.dll",
+    "size": 30208
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\_BY_PASSS\\[01_백신우회_난독화]\\01_DOTNET_난독화\\ConfuserEx-GUI\\GalaSoft.MvvmLight.Extras.dll",
+    "rel": "[01_백신우회_난독화]\\01_DOTNET_난독화\\ConfuserEx-GUI\\GalaSoft.MvvmLight.Extras.dll",
+    "size": 21504
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\_BY_PASSS\\[01_백신우회_난독화]\\01_DOTNET_난독화\\ConfuserEx-GUI\\GalaSoft.MvvmLight.Platform.dll",
+    "rel": "[01_백신우회_난독화]\\01_DOTNET_난독화\\ConfuserEx-GUI\\GalaSoft.MvvmLight.Platform.dll",
+    "size": 13824
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\_BY_PASSS\\[01_백신우회_난독화]\\01_DOTNET_난독화\\ConfuserEx-GUI\\Microsoft.DiaSymReader.Native.amd64.dll",
+    "rel": "[01_백신우회_난독화]\\01_DOTNET_난독화\\ConfuserEx-GUI\\Microsoft.DiaSymReader.Native.amd64.dll",
+    "size": 1495800
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\_BY_PASSS\\[01_백신우회_난독화]\\01_DOTNET_난독화\\ConfuserEx-GUI\\Microsoft.DiaSymReader.Native.x86.dll",
+    "rel": "[01_백신우회_난독화]\\01_DOTNET_난독화\\ConfuserEx-GUI\\Microsoft.DiaSymReader.Native.x86.dll",
+    "size": 1188080
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\_BY_PASSS\\[01_백신우회_난독화]\\01_DOTNET_난독화\\ConfuserEx-GUI\\Microsoft.Win32.Registry.dll",
+    "rel": "[01_백신우회_난독화]\\01_DOTNET_난독화\\ConfuserEx-GUI\\Microsoft.Win32.Registry.dll",
+    "size": 26496
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\_BY_PASSS\\[01_백신우회_난독화]\\01_DOTNET_난독화\\ConfuserEx-GUI\\Ookii.Dialogs.Wpf.dll",
+    "rel": "[01_백신우회_난독화]\\01_DOTNET_난독화\\ConfuserEx-GUI\\Ookii.Dialogs.Wpf.dll",
+    "size": 104448
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\_BY_PASSS\\[01_백신우회_난독화]\\01_DOTNET_난독화\\ConfuserEx-GUI\\System.IO.Packaging.dll",
+    "rel": "[01_백신우회_난독화]\\01_DOTNET_난독화\\ConfuserEx-GUI\\System.IO.Packaging.dll",
+    "size": 46184
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\_BY_PASSS\\[01_백신우회_난독화]\\01_DOTNET_난독화\\ConfuserEx-GUI\\System.Security.AccessControl.dll",
+    "rel": "[01_백신우회_난독화]\\01_DOTNET_난독화\\ConfuserEx-GUI\\System.Security.AccessControl.dll",
+    "size": 33672
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\_BY_PASSS\\[01_백신우회_난독화]\\01_DOTNET_난독화\\ConfuserEx-GUI\\System.Security.Principal.Windows.dll",
+    "rel": "[01_백신우회_난독화]\\01_DOTNET_난독화\\ConfuserEx-GUI\\System.Security.Principal.Windows.dll",
+    "size": 18312
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\_BY_PASSS\\[01_백신우회_난독화]\\01_DOTNET_난독화\\ConfuserEx-GUI\\System.ValueTuple.dll",
+    "rel": "[01_백신우회_난독화]\\01_DOTNET_난독화\\ConfuserEx-GUI\\System.ValueTuple.dll",
+    "size": 78992
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\_BY_PASSS\\[01_백신우회_난독화]\\01_DOTNET_난독화\\ConfuserEx-GUI\\System.Windows.Interactivity.dll",
+    "rel": "[01_백신우회_난독화]\\01_DOTNET_난독화\\ConfuserEx-GUI\\System.Windows.Interactivity.dll",
+    "size": 55904
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\_BY_PASSS\\[01_백신우회_난독화]\\02_네이티브_패커\\xorPacker-master\\xorPacker\\bin\\Debug\\packed_exe.exe",
+    "rel": "[01_백신우회_난독화]\\02_네이티브_패커\\xorPacker-master\\xorPacker\\bin\\Debug\\packed_exe.exe",
+    "size": 1578060
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\_BY_PASSS\\[01_백신우회_난독화]\\02_네이티브_패커\\xorPacker-master\\xorPacker\\bin\\Debug\\putty.exe",
+    "rel": "[01_백신우회_난독화]\\02_네이티브_패커\\xorPacker-master\\xorPacker\\bin\\Debug\\putty.exe",
+    "size": 883600
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\_BY_PASSS\\[01_백신우회_난독화]\\02_네이티브_패커\\xorPacker-master\\xorPacker\\bin\\Debug\\xorPacker.exe",
+    "rel": "[01_백신우회_난독화]\\02_네이티브_패커\\xorPacker-master\\xorPacker\\bin\\Debug\\xorPacker.exe",
+    "size": 14848
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\_BY_PASSS\\[01_백신우회_난독화]\\02_네이티브_패커\\xorPacker-master\\xorPacker\\obj\\Debug\\xorPacker.exe",
+    "rel": "[01_백신우회_난독화]\\02_네이티브_패커\\xorPacker-master\\xorPacker\\obj\\Debug\\xorPacker.exe",
+    "size": 14848
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\_BY_PASSS\\[01_백신우회_난독화]\\02_네이티브_패커\\xorPacker-master\\xorPacker\\obj\\Debug\\TempPE\\Properties.Resources.Designer.cs.dll",
+    "rel": "[01_백신우회_난독화]\\02_네이티브_패커\\xorPacker-master\\xorPacker\\obj\\Debug\\TempPE\\Properties.Resources.Designer.cs.dll",
+    "size": 3072
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\_BY_PASSS\\[01_백신우회_난독화]\\02_네이티브_패커\\xorPacker-master\\xorPacker\\Resources\\xorStub.exe",
+    "rel": "[01_백신우회_난독화]\\02_네이티브_패커\\xorPacker-master\\xorPacker\\Resources\\xorStub.exe",
+    "size": 7168
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\_BY_PASSS\\[01_백신우회_난독화]\\02_네이티브_패커\\xorPacker-master\\xorStub\\bin\\Debug\\xorStub.exe",
+    "rel": "[01_백신우회_난독화]\\02_네이티브_패커\\xorPacker-master\\xorStub\\bin\\Debug\\xorStub.exe",
+    "size": 217600
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\_BY_PASSS\\[01_백신우회_난독화]\\02_네이티브_패커\\xorPacker-master\\xorStub\\bin\\Release\\xorStub.exe",
+    "rel": "[01_백신우회_난독화]\\02_네이티브_패커\\xorPacker-master\\xorStub\\bin\\Release\\xorStub.exe",
+    "size": 7168
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\_BY_PASSS\\[01_백신우회_난독화]\\02_네이티브_패커\\xorPacker-master\\xorStub\\bin\\x86\\Release\\xorStub.exe",
+    "rel": "[01_백신우회_난독화]\\02_네이티브_패커\\xorPacker-master\\xorStub\\bin\\x86\\Release\\xorStub.exe",
+    "size": 217088
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\_BY_PASSS\\[01_백신우회_난독화]\\02_네이티브_패커\\xorPacker-master\\xorStub\\obj\\Debug\\xorStub.exe",
+    "rel": "[01_백신우회_난독화]\\02_네이티브_패커\\xorPacker-master\\xorStub\\obj\\Debug\\xorStub.exe",
+    "size": 217600
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\_BY_PASSS\\[01_백신우회_난독화]\\02_네이티브_패커\\xorPacker-master\\xorStub\\obj\\Release\\xorStub.exe",
+    "rel": "[01_백신우회_난독화]\\02_네이티브_패커\\xorPacker-master\\xorStub\\obj\\Release\\xorStub.exe",
+    "size": 7168
+  },
+  {
+    "path": "C:\\Users\\Administrator\\Desktop\\_BY_PASSS\\[01_백신우회_난독화]\\02_네이티브_패커\\xorPacker-master\\xorStub\\obj\\x86\\Release\\xorStub.exe",
+    "rel": "[01_백신우회_난독화]\\02_네이티브_패커\\xorPacker-master\\xorStub\\obj\\x86\\Release\\xorStub.exe",
+    "size": 217088
+  }
+]
