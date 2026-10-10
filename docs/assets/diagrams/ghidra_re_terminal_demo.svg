@@ -48,6 +48,7 @@
     <text x="0" y="296" fill="#6ee7b7">rem example.bat - Bat2Exe compilation payload decompiled cleanly</text>
     <text x="0" y="316" fill="#a855f7">----------------------------------</text>
     
-    <text x="0" y="344"><tspan class="prompt">maya@lab:~$</tspan> <rect x="108" y="332" width="8" height="15" class="cursor"/></text>
+    <text x="0" y="344"><tspan class="prompt">maya@lab:~$</tspan></text>
+    <rect x="108" y="332" width="8" height="15" class="cursor"/>
   </g>
 </svg>
