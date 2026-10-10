@@ -1,0 +1,32 @@
+# Byte-compiled / optimized files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment and sensitive credential files
+.env
+.env.*
+*.token
+*.key
+*.pem
+credentials.json
+
+# Caches and temporary outputs
+*.log
+*.tmp
+*.bak
+.cache/
+.pytest_cache/
+.coverage
+
+# IDE and OS artifacts
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Scratch and build directories
+scratch/
+build/
+dist/
+node_modules/
