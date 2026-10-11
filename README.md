@@ -27,6 +27,10 @@
 
 ## 📑 Executive Summary & Master Whitepapers (핵심 역공학 백서 색인)
 
+<details open>
+<summary><b>📑 View Master Reverse Engineering Whitepapers Registry (5 Papers)</b></summary>
+<br>
+
 <table width="100%">
   <thead>
     <tr>
@@ -94,6 +98,7 @@
     </tr>
   </tbody>
 </table>
+</details>
 
 ---
 
@@ -154,6 +159,10 @@ flowchart TD
 ---
 
 ## 🔍 Ghidra MCP Binary Reverse Engineering Matrix (`ghidra-re-operator`)
+
+<details open>
+<summary><b>🔍 View Ghidra MCP Binary Reverse Engineering Matrix (3 Target Binaries)</b></summary>
+<br>
 
 All 3 compiled PE32 executables in the archive were dissected using `re_triage_binary`, `re_search_strings`, and `re_disassemble_offset`:
 
@@ -220,10 +229,15 @@ All 3 compiled PE32 executables in the archive were dissected using `re_triage_b
     </tr>
   </tbody>
 </table>
+</details>
 
 ---
 
 ## 🛠️ 8 Core Tools Source Code Dissection Summary
+
+<details>
+<summary><b>🛠️ View 8 Core Tools Line-by-Line Source Code Teardown</b></summary>
+<br>
 
 1. **[`Bat2Exe-dehoisted`](./references/batch_corpus_28/Bat2Exe-dehoisted)** (`Batch2Exe.MainWindow` & `CMethods.cs`):
    - Uses `CSharpCodeProvider.CompileAssemblyFromSource` to dynamically compile an in-memory stub with embedded resource `batch_cmd`.
@@ -242,10 +256,15 @@ All 3 compiled PE32 executables in the archive were dissected using `re_triage_b
    - Implements a **Single-Character Pushdown Automaton (PDA)** state machine in `BatchDeobfuscator.read_logical_line()` and full `%var:str1=str2%` / `%var:~start,len%` emulation.
 8. **[`Exorcism`](./references/batch_corpus_28/Exorcism)**:
    - Injects `payload_dll.dll` into `cmd.exe` and hooks the internal command dispatcher **`FindFixAndRun` (RVA `0x116B0`)** via MS Detours to intercept every expanded command node right before execution.
+</details>
 
 ---
 
 ## 🚀 Quickstart: Running the Automated Forensics & Unpacker Engine
+
+<details open>
+<summary><b>🚀 Quickstart &amp; Execution Commands</b></summary>
+<br>
 
 ```bash
 # 1. Automated PE32 Bat2Exe unpacker and payload extractor
@@ -254,10 +273,15 @@ python src/pe_stub_unpacker.py --input "references/batch_corpus_28/Bat2Exe-dehoi
 # 2. Run the unit test suite
 python -m unittest tests/test_pe_unpacker.py
 ```
+</details>
 
 ---
 
 ## 📂 Clean Root Repository Architecture (@clean-root)
+
+<details>
+<summary><b>📂 View Clean Root Repository Directory Tree (@clean-root)</b></summary>
+<br>
 
 ```text
 bat2exe-ghidra-forensics/
@@ -277,3 +301,4 @@ bat2exe-ghidra-forensics/
 ├── LICENSE                    # 📜 Maya Thorne Systems & Security Research License (MT-SRL)
 └── README.md                  # 🌟 Clean first-viewport showcase and documentation
 ```
+</details>

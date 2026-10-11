@@ -27,6 +27,10 @@
 
 ## 📑 Executive Summary & Master Whitepapers (핵심 역공학 백서 색인)
 
+<details open>
+<summary><b>📑 View Master Reverse Engineering Whitepapers Registry (5 Papers)</b></summary>
+<br>
+
 | # | Document / Artifact | Core Scope & Forensic Coverage | Size |
 | :-: | :--- | :--- | :-: |
 | **1** | 🔬 **[DEEP_REVERSE_ENGINEERING_AND_SOURCE_ANALYSIS.md](../whitepapers/DEEP_REVERSE_ENGINEERING_AND_SOURCE_ANALYSIS.md)** | **Ghidra MCP PE Binary Disassembly** (`bat2exe_12.exe`, `example.exe`, `BEDeCode.exe`) + **Line-by-Line Source Code Teardown of 8 Core Tools** (`Bat2Exe-dehoisted`, `Batch-Encryption-DeCoder`, `BatCloak`, `Invoke-DOSfuscation`, `SomalifuscatorV2`, `0xidiz3r`, `batch_deobfuscator`, `Exorcism`) | **42.8 KB** |
@@ -34,6 +38,7 @@
 | **3** | ⚙️ **[GHIDRA_BINARY_RE_AND_DEOBFUSCATOR_ENGINE_ANALYSIS.md](../whitepapers/GHIDRA_BINARY_RE_AND_DEOBFUSCATOR_ENGINE_ANALYSIS.md)** | **Static & Dynamic Unpacking Pipeline**: PE Overlay Extraction, CLR `#US` Stream Recovery, Multi-Pass Regex/AST Deobfuscation Engine (`src/deobfuscator_engine.py`) | **44.4 KB** |
 | **4** | 📖 **[BATCH_OBFUSCATION_ENCYCLOPEDIA.md](../whitepapers/BATCH_OBFUSCATION_ENCYCLOPEDIA.md)** | **48+ Open-Source & Hugging Face Reference Encyclopedia**: Complete classification of obfuscators, compilers, deobfuscators, and ML datasets | **30.3 KB** |
 | **5** | 🛡️ **[BATCH_OBFUSCATION_MASTER_GUIDE.md](../whitepapers/BATCH_OBFUSCATION_MASTER_GUIDE.md)** | **30-Year Evolution (1990s–2026) & Defense Matrix**: Historical timeline, Mandiant/Unit 42 threat intelligence, production Sigma & YARA rulesets | **33.6 KB** |
+</details>
 
 ---
 
@@ -97,15 +102,24 @@ flowchart TD
 
 All 3 compiled PE32 executables in the archive were dissected using `re_triage_binary`, `re_search_strings`, and `re_disassemble_offset`:
 
+<details open>
+<summary><b>🔍 View Ghidra MCP Binary Reverse Engineering Matrix (3 Target Binaries)</b></summary>
+<br>
+
 | Target Binary | Architecture & Subsystem | Entry Point RVA | Sections & Entropy | Key Disassembly & Runtime Mechanism |
 | :--- | :--- | :-: | :--- | :--- |
 | **`bat2exe_12.exe`** | PE32 x86 (32-bit) · Windows GUI (`2`) | `0x20ea0` | `UPX0` (Virt `0x17000`, Raw `0`), `UPX1` (7.89 bits/byte), `.rsrc` | `0x20ea0: PUSHAD` ➔ `MOV ESI, 0x417000` ➔ `LEA EDI, [ESI - 0x16000]` ➔ NRV2B bit-stream decompression loop ➔ IAT rebuild (`LoadLibraryA`/`GetProcAddress`) ➔ `0x20ffd: JMP 0x00412475` (OEP). |
 | **`example.exe`** (`Bat2Exe-dehoisted`) | PE32 x86 (.NET CLR Managed) · Windows CUI (`3`) | `0x337e` | `.text` (5.64), `.rsrc` (3.99), `.reloc` (0.18) | `0x337e: FF 25 00 20 40 00 (JMP dword ptr [0x00402000])` ➔ `mscoree.dll!_CorExeMain`. Embeds UTF-16LE user strings at `0x143b` (`"batch_cmd"`), `0x1465` (`"\\temp.bat"`), `0x1541` (`"/c prompt \b & echo on"`). |
 | **`BEDeCode.exe`** (`Batch-Encryption-DeCoder`) | PE32 x86 (VB6 Native Code) · Windows GUI (`2`) | `0x1670` | `.text` (5.43), `.data` (0.00), `.rsrc` (3.55) | `0x1670: 68 68 19 40 00 (PUSH 0x401968)` ➔ `E8 EF FF FF FF (CALL ThunRTMain)` in `MSVBVM60.DLL`. Implements `CmdCode_Click` (`%%a` + `CHRMAPSET` substitution) and `CmdDeCode_Click` (`Replace(txt, "%", "")`). |
+</details>
 
 ---
 
 ## 🛠️ 8 Core Tools Source Code Dissection Summary
+
+<details>
+<summary><b>🛠️ View 8 Core Tools Line-by-Line Source Code Teardown</b></summary>
+<br>
 
 1. **[`Bat2Exe-dehoisted`](../../references/batch_corpus_28/Bat2Exe-dehoisted)** (`Batch2Exe.MainWindow` & `CMethods.cs`):
    - Uses `CSharpCodeProvider.CompileAssemblyFromSource` to dynamically compile an in-memory stub with embedded resource `batch_cmd`.
@@ -124,10 +138,15 @@ All 3 compiled PE32 executables in the archive were dissected using `re_triage_b
    - Implements a **Single-Character Pushdown Automaton (PDA)** state machine in `BatchDeobfuscator.read_logical_line()` and full `%var:str1=str2%` / `%var:~start,len%` emulation.
 8. **[`Exorcism`](../../references/batch_corpus_28/Exorcism)**:
    - Injects `payload_dll.dll` into `cmd.exe` and hooks the internal command dispatcher **`FindFixAndRun` (RVA `0x116B0`)** via MS Detours to intercept every expanded command node right before execution.
+</details>
 
 ---
 
 ## 🚀 Quickstart: Running the Automated Forensics & Unpacker Engine
+
+<details open>
+<summary><b>🚀 Quickstart &amp; Execution Commands</b></summary>
+<br>
 
 ```bash
 # 1. Automated PE32 Bat2Exe unpacker and payload extractor
@@ -136,10 +155,15 @@ python src/pe_stub_unpacker.py --input "references/batch_corpus_28/Bat2Exe-dehoi
 # 2. Run the unit test suite
 python -m unittest tests/test_pe_unpacker.py
 ```
+</details>
 
 ---
 
 ## 📂 Clean Root Repository Architecture (@clean-root)
+
+<details>
+<summary><b>📂 View Clean Root Repository Directory Tree (@clean-root)</b></summary>
+<br>
 
 ```text
 bat2exe-ghidra-forensics/
@@ -159,3 +183,4 @@ bat2exe-ghidra-forensics/
 ├── LICENSE                    # 📜 Maya Thorne Systems & Security Research License (MT-SRL)
 └── README.md                  # 🌟 Clean first-viewport showcase and documentation
 ```
+</details>
